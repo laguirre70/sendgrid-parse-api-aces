@@ -14,7 +14,8 @@ var inbound = {
       to:       "leo.m.aguirre@gmail.com",
       from:     "no-reply@aces.conciergeconfirmation.com",
       subject:  "Email from guest, please follow up",
-      text:     "An email send using GCv2 was replied to. It should be attached." + payload.text
+      text:     "Someone replied to an Email that was sent using GoConcierge.com\nhere are the details:\nEmail Text: "
+      + payload.text + "\nEmail From:" + payload.from +"\nEmail Subject:" + payload.subject + "\n\nAttached is the full payload"
     });
 
     email.addFile({
