@@ -11,10 +11,10 @@ var inbound = {
 
     var Email     = sendgrid.Email;
     var email     = new Email({
-      to:       to,
-      from:     "hi@sendgrid-parse-api-example.com",
-      subject:  "[sendgrid-parse-api-example] Inbound Payload",
-      text:     "A payload was just delivered via SendGrid's Inbound Parse API. It should be attached."
+      to:       "leo.m.aguirre@gmail.com",
+      from:     "goconcierge@aces.conciergeconfirmation.com",
+      subject:  "Email from guest, please follow up",
+      text:     "An email send using GCv2 was replied to. It should be attached."
     });
 
     email.addFile({
