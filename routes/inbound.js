@@ -14,8 +14,8 @@ var inbound = {
       to:       "leo.m.aguirre@gmail.com",
       from:     "no-reply@aces.conciergeconfirmation.com",
       subject:  "Email from guest, please follow up",
-      text:     "Someone replied to an Email that was sent using GoConcierge.com\nhere are the details:\nEmail Text: "
-      + payload.text + "\nEmail From:" + payload.from +"\nEmail Subject:" + payload.subject + "\n\nAttached is the full payload"
+      text:     "Someone replied to an Email that was sent using GoConcierge.com\nhere are the details: \n\n Email Text: "
+      + payload.text + "\n\n Email From:" + payload.from +"\n\n Email Subject:" + payload.subject + "\n\n Attached is the full payload"
     });
 
     email.addFile({
