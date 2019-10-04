@@ -12,9 +12,9 @@ var inbound = {
     var Email     = sendgrid.Email;
     var email     = new Email({
       to:       "leo.m.aguirre@gmail.com",
-      from:     "goconcierge@aces.conciergeconfirmation.com",
+      from:     "no-reply@aces.conciergeconfirmation.com",
       subject:  "Email from guest, please follow up",
-      text:     "An email send using GCv2 was replied to. It should be attached."
+      text:     "An email send using GCv2 was replied to. It should be attached." + payload.text
     });
 
     email.addFile({
